@@ -2,7 +2,7 @@ header,body,footer {
 	font-family: 'raleway', sans-serif;
 	text-decoration: none;
 }
-	
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -15,7 +15,7 @@ a {
 	color: black;
 }
 a:hover {
-	color: green;
+	color: #0065FC;
 }
 nav a:hover{color: #0065FC;
 }
@@ -103,8 +103,7 @@ input:focus{
 	padding: 15px;
 	background-color: #DEEBFF;
 	color: #0065FC;
-	margin-right: 15px;
-	
+	margin-right: 15px;	
 }
 
 .Familial { 
@@ -148,50 +147,49 @@ input:focus{
 
 main { 
 	display: flex;
-	justify-content: center;
-	justify-content: space-between;
-	margin-bottom: 60px;
-	
+	justify-content: space-around;	
 }
 
-.hebergements_Marseille {
-    display: grid;
-	align-items: start;
-	justify-content: space-around;
-	justify-items: center;
-	grid: auto auto auto;
-	row-gap: 40px;
+section.HBGTS {
+	display: grid;
+	width: 65%;
+    height: 620px;
+    background-color:#f2f2f2;
+    border-radius: 20px;	
+}
+
+.Hébergements {
+	display: grid;
+	gap: 40px;
 	grid-template-columns: 200px 200px 200px;
 	grid-template-rows: 200px 200px;
-	grid-auto-flow: row;
-	padding-top: 30px;
-    width: 70%;
-    height: 550px;
-    background-color:#f2f2f2;
-    border-radius: 20px;
-	margin-left: 20px;
+	width: 100%;
+	justify-content: space-around;
+	justify-items: center;
+	align-items: center;	
 }
-.hebergements_Marseille figure{
+
+.Hébergements figure{
 	display: grid;
 	border: 3px solid white;
 	border-radius:15px;
 	background-color: white;
 	justify-content: center;
-	width: 222px;
+	width: 225px;
 	height:210px;
 	box-shadow: 1px 6px 5px rgb(173, 171, 171);
 }
 
 img.a {
 	justify-items: center;
-	width: 220px;
-	height: 100px;
+	width: 223px;
+	height: 110px;
 	border-radius: 10px 10px 0px 0px;
 	border-bottom: 20px;
+	object-fit: cover;
 }
 
 h3 {
-	display: flex;
 	font-size:medium;
 	font-weight:bold;
 	flex-direction: row;
@@ -209,20 +207,24 @@ h3 {
 	display: inline;
 	justify-self: flex-start;
 	font-weight: bold;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 aside { 
-	display: grid;
-	justify-content: left;
-	flex-direction: column;
+	display: flex;
 	background-color: #f2f2f2;
-	row-gap: 20px;
 	border-radius: 10px;
-	width:25%;
-	height: 600px;
-	margin-right: 20px;	
+	width:27%;
+	height: 620px;
+	justify-content: space-between;		
 }
+.les_plus_populaires {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	
+}
+
 aside figure {
 	display: flex;
 	position: absolute;
@@ -233,25 +235,28 @@ aside figure {
 	width: 320px;
 	height: 110px;
 	box-shadow: 1px 6px 5px rgb(173, 171, 171);
-
+	
 }
+
 .arrow {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
 }
 
-article.b {
+.b {
 	display:flex;
 	width: 320px;
 	height: 110px;
 	border-radius: 10px;
+	justify-content: space-between;
 }
 
 img.b {
 	width: 110px;
 	height: 110px;
 	border-radius: 10px 0px 0px 10px;
+	object-fit: cover;
 }
 
 .pop { 
@@ -264,75 +269,87 @@ img.b {
 }
 
 .Activités {
-	display: grid;
-	
+	display: grid;	
 	grid-template-columns: 360px 360px 360px 360px;
-	grid-template-rows: 240px 240px;
-	gap: 30px;
-	height: 470px;
-} 
+	grid-template-rows: 205px 205px;
+	row-gap: 45px;
+	height: 410px;
+	justify-content: space-evenly;	
+}
+
 .Activités figure {
 	border: none;
 	border-radius: 15px;
 	width: 340px;
 	box-shadow: 1px 6px 5px rgb(173, 171, 171);
 }
+
 .Pics_L {
 	width: 340px;
 	height: 410px;
 	border-radius: 15px 15px 0px 0px;
+	object-fit: cover;	
 }
+
 .Pic_M {
     width: 340px;
-	height: 200px;
+	height: 180px;
 	border-radius: 15px 15px 0px 0px;
+	object-fit: cover;
 }
 .Pics_S {
 	width: 340px;
-	height: 140px ;
+	height: 170px;
 	border-radius: 15px 15px 0px 0px;
+	object-fit: cover;
 }
-
+.Pic_XS {
+	width: 340px;
+	height: 130px;
+	border-radius: 15px 15px 0px 0px;
+	object-fit: cover;
+}
 .item_1 { 
+	display: grid;
 	grid-column: 1/2;
 	grid-row: 1/3;
 }
 .item_2 {
+	display: grid;
 	grid-column: 2/3;
 	grid-row: 1 /2;
-	border-radius: 10px;
 }
 .item_3 {
+	display: grid;
 	grid-column: 2/3;
 	grid-row-end: 2/3;
-	border-radius: 10px;
 }
+
 .item_4 {
+	display: grid;
 	grid-column: 3/4;
 	grid-row: 1/3;
-	border-radius: 10px;
 }
 
 .item_5 {
+	display: grid;
 	grid-column: 4/5;
 	grid-row: 1/2;
-	border-radius: 10px;
 }
 
 .item_6 {
+	display: grid;
 	grid-column: 4/5;
 	grid-row: 2/3;
-	border: none;
-	border-radius: 10px;
+
 }
 figcaption {
-	justify-content: left;
-	align-content: flex-start;
 	margin-left: 10px;
 }
+
 footer	
 	{display: flex;
-	margin-top: 60px;
+	margin-top: 90px;
 	justify-content: space-between;
 	background-color: #F2F2F2;
 }
