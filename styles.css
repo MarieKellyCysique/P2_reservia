@@ -10,15 +10,19 @@ header {
 	padding-top: 20px;
 	margin-left: 20px;	
 }
-
+header a {
+	color: #0065FC;
+}
+.H1 {
+	margin-left: 23px;
+	margin-bottom: 30px;
+}
 a { 
 	text-decoration: none;
 	color: black;
 }
 a:hover {
-	color: #0065FC;
-}
-nav a:hover{color: #0065FC;
+	color: green;
 }
 
 nav {
@@ -38,14 +42,12 @@ nav {
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
 	color: black ;
 	margin-left: 20px;
 }
-p {
-	margin-left: 25px;
-}
+
 #recherches {
 	display: flex;
 	justify-content: space-between;
@@ -65,10 +67,12 @@ p {
 	border: none;
 	font-weight: bolder;
 	padding: 10px;
+	width: 150px;
 }
 
 input:focus{
 		background-color:rgb(255, 255, 0);
+		
 }
 .Rechercher {
 	justify-content: center;
@@ -81,20 +85,23 @@ input:focus{
 	margin-left: 15px;
 
 }
-#filtres { 
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 60%;
-	font-weight: bold;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	padding: 15px;
+h2 {
+	font-size: 21px;
 }
-
-.Filtres_title {
-	border: none;
-	padding: 15px;
+section#filtres { 
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+	width:60%;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0px 0px 0px 0px;
+}
+.Filtres {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .button { 
@@ -103,15 +110,17 @@ input:focus{
 	border: 1px grey solid;
 	border-radius: 30px;
 	border-left: none;
-	padding-right: 10px;
+	padding-right: 5px;
+	margin-left: 35px;
+	padding: none;
 }
 
-.Economique { 
+.Economique {
 	border-radius: 50% 50%;
 	padding: 15px;
 	background-color: #DEEBFF;
 	color: #0065FC;
-	margin-right: 15px;	
+	margin-right: 5px;	
 }
 
 .Familial { 
@@ -119,7 +128,7 @@ input:focus{
 	padding: 15px 19px 15px 19px;
 	background-color: #DEEBFF;
 	color: #0065FC;
-	margin-right: 20px;
+	margin-right: 5px;
 }
 
 .Romantique{
@@ -127,7 +136,7 @@ input:focus{
 	padding: 15px 16px 15px 16px;
 	background-color: #DEEBFF;
 	color: #0065FC;
-	margin-right: 15px;
+	margin-right: 5px;
 }
 
 .Animaux {
@@ -135,7 +144,7 @@ input:focus{
 	padding: 15px;
 	background-color: #DEEBFF;
 	color: #0065FC;
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 .logements { 
@@ -151,32 +160,36 @@ input:focus{
 	border-radius: 50% 50%;
 	padding: 5px 10px 5px 10px ;
 	margin-right: 20px;
-	margin-left:30px}
-
+	margin-left:30px;
+	margin-bottom:30px;
+}
 main { 
 	display: flex;
 	justify-content: space-around;	
 }
 
 section.HBGTS {
-	display: grid;
+	display: flex;
+	position: relative;
 	width: 65%;
     height: 620px;
     background-color:#f2f2f2;
-    border-radius: 20px;	
+    border-radius: 20px;
 }
+
 .HBGTS h2 {
-	margin-left: 40px;
+	margin-left: 75px;
 }
+
 .Hébergements {
 	display: grid;
-	gap: 40px;
-	grid-template-columns: 200px 200px 200px;
+	gap: 70px;
+	grid-template-columns: 230px 230px 230px;
 	grid-template-rows: 200px 200px;
-	width: 100%;
-	justify-content: space-around;
-	justify-items: center;
-	align-items: center;	
+	position: absolute;
+	margin-right: 20px;
+	margin-left: 40px;
+	margin-top: 45px;		
 }
 
 .Hébergements figure{
@@ -184,12 +197,15 @@ section.HBGTS {
 	border: 3px solid white;
 	border-radius:15px;
 	background-color: white;
-	justify-content: center;
 	width: 225px;
 	height:210px;
 	box-shadow: 1px 6px 5px rgb(173, 171, 171);
 }
 
+figcaption {
+	justify-content: left;
+	margin-left: 10px;
+}
 img.a {
 	justify-items: center;
 	width: 223px;
@@ -198,12 +214,13 @@ img.a {
 	border-bottom: 20px;
 	object-fit: cover;
 }
-
+p { 
+	margin-left: 0px;
+}
 h3 {
 	font-size:medium;
 	font-weight:bold;
 	flex-direction: row;
-	margin-left: 4px;
 }
 
 .star {
@@ -218,14 +235,14 @@ h3 {
 	justify-self: flex-start;
 	font-weight: bold;
 	margin-top: 10px;
-
+	margin-left: 40px;
 }
 
 aside { 
 	display: flex;
 	background-color: #f2f2f2;
 	border-radius: 10px;
-	width:27%;
+	width: 27%;
 	height: 620px;
 	justify-content: space-between;		
 }
@@ -244,42 +261,37 @@ aside figure {
 	border-radius: 10px;
 	background-color: white;
 	width: 330px;
-	height: 110px;
+	height: 112px;
 	box-shadow: 1px 6px 5px rgb(173, 171, 171);
-
+}
+aside.figcaption {
+	justify-content: left;
 }
 
 .arrow {
 	display: flex;
 	align-items: baseline;
-	justify-content: space-between;
-	margin-left: 40px;
+	margin-left: 45px;
+	justify-content:space-between;
+	width: 100%;	
 }
 
 .b {
 	display:flex;
 	width: 330px;
-	height: 110px;
+	height: 112px;
 	border-radius: 10px;
 	justify-content: space-between;
 	margin-bottom: 70px;
 }
 
 img.b {
-	width: 110px;
-	height: 110px;
+	width: 112px;
+	height: 112px;
 	border-radius: 10px 0px 0px 10px;
 	object-fit: cover;
 }
 
-.pop { 
-	display: flex;
-	flex-direction: column;
-	width: 150px ;
-	height: 100px;
-	line-height: 12px;
-	margin-left: 10px;
-}
 section.Activités{
 	display: grid;
 	margin-bottom: 30px;
@@ -369,9 +381,6 @@ section.Activités{
 	grid-row: 2/3;
 
 }
-figcaption {
-	margin-left: 10px;
-}
 
 footer	
 	{display: flex;
@@ -389,3 +398,94 @@ footer ul{
 	line-height: 2;
 	width: 75%;
 	}
+
+@media screen and (max-width:964px) { 
+		.header {
+			display: flex;
+		
+		}
+	
+		nav {
+			display:flex;
+			flex-direction: column-reverse;
+			width: 100%;
+			position: relative;
+		
+		}
+		.nav_items {
+			display: flex;
+			width: 50%;
+		}
+		.nav_items:last-child {
+			display: flex;
+			position:absolute;
+			right:0px;
+			top: 0px;
+		}
+		.nav_items:hover {
+			border-top: none;
+		}
+		h1 {
+			font-size: 17px;
+		}
+		section#recherches {
+			display: flex;
+			flex-direction: row;
+			font-weight: lighter;
+			width: 95%;
+		}
+		.search input {
+			width: 70px;
+			text-align: center;
+			font-size: 12px;
+		}
+		.search{
+			width: 60px;
+		}
+		.rechercher {
+			width:50px;
+		}
+
+
+		section#filtres {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		.Filtres {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.button {
+			margin-bottom: 10px;
+			width: 45%;
+		}
+		
+		.Familial{
+			display: flex;
+		}
+		.body {
+			display:flex;	
+			}
+		.main {
+			display: flex;
+		}
+		aside {
+			display:flex;
+			text-align: center;
+			
+		}
+		aside .les_plus_populaires{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.HBGTS {
+			display: flex;
+		}
+		.Hebergements figure{
+			display: flex;
+			width:100%;
+		}	 
+	}
+	
