@@ -187,7 +187,7 @@ main {
 	
 .Hébergements figure{
 	display: grid;
-	border: 3px solid white;
+	border: 3px solid transparent;
 	border-radius:15px;
 	background-color: white;
 	width: 230px;
@@ -249,7 +249,7 @@ aside {
 aside figure {
 	display: flex;
 	position: absolute;
-	border: 2px solid white;
+	border: 2px solid transparent;
 	border-radius: 10px;
 	background-color: white;
 	width: 330px;
@@ -354,7 +354,7 @@ img.b {
 .item_3 {
 	display: grid;
 	grid-column: 2/3;
-	grid-row-end: 2/3;
+	grid-row: 2/3;
 	margin-top: 40px;
 }
 
@@ -511,7 +511,7 @@ main {
 
 aside {
 	order:-1;
-	border-radius: 15px;
+	border-radius: 0px;
 	background-color:#f2f2f2;
 	width:auto;
 	height: auto;
@@ -595,6 +595,7 @@ h3 {
 .afficher {
 	margin-top: 5px;
 	margin-left: 5px;
+	font-size: 14px;
 	}
 #Activités {
 	display: flex;
