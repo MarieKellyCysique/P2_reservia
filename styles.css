@@ -244,6 +244,7 @@ aside {
 	justify-content: center;
 	align-content: space-between;
 	width: 100%;
+	padding-top: 0px;
 }
 
 aside figure {
@@ -263,8 +264,7 @@ aside.figcaption {
 .arrow {
 	display: flex;
 	align-items: baseline;
-	justify-content:space-around;
-	margin-bottom: 20px;	
+	justify-content:space-around;	
 }
 
 .arrow h2{
