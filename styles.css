@@ -74,7 +74,7 @@ h1 {
 	border: 1px #f2f2f2 solid;
 	background-color: #f2f2f2;
 	border-radius: 10px 0px 0px 10px;
-	width: 5%; 
+	width: 15%; 
 	padding: 10px;
 	margin-left: 12px;
 }
@@ -86,9 +86,22 @@ h1 {
 }
 
 input:focus{
-		background-color:rgb(255, 255, 0);
-		
+		background-color:rgb(255, 255, 0);		
 }
+.iconsearch{
+	display: flex;
+	visibility: hidden;
+	margin-left: 50px;
+	color: white;
+	border: 1px solid #0065FC;
+	background-color: #0065FC;
+	border-radius: 10px;
+	border-radius: 10px;
+	padding: 15px;
+	
+}
+	
+
 .Rechercher {
 	justify-content: center;
 	color:white;
@@ -453,7 +466,7 @@ h1 {
 	flex-direction: row;
 	font-weight: lighter;
 	margin-left: 0px;
-	width: 95%;
+	width: 30%;
 	}
 .search input {
 	width: 100px;
@@ -463,12 +476,16 @@ h1 {
 .search{
 	width: 90px;
 	}
-.rechercher {
+.Rechercher {
 	display: none;
-	width:50px;
-	}
+	visibility: hidden;
+}
+
 .iconmap {
 	margin-left: 13px;
+}
+.iconsearch {
+	visibility: visible;
 }
 #filtres {
 	display: flex;
