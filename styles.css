@@ -2,14 +2,12 @@ header,body,footer {
 	font-family: 'raleway', sans-serif;
 	text-decoration: none;
 }
-
 header {
 	display: flex;
 	font-weight: bold;
 	padding-top: 20px;
 	margin-left: 20px;	
 }
-
 .H1 {
 	margin-left: 23px;
 	margin-bottom: 30px;
@@ -21,7 +19,6 @@ a {
 a:hover {
 	color: blue;
 }
-
 nav {
 	display: flex;
 	align-items: center;
@@ -33,7 +30,6 @@ nav {
 #logo {
 	margin-right: auto;
 }
-
 nav a:hover {
 	border-top:3px solid #0065FC;
 	padding-top: 20px;
@@ -62,31 +58,28 @@ h1 {
 	color: black ;
 	margin-left: 20px;
 }
-
 #recherches {
 	display: flex;
-	justify-content: space-between;
+	align-items: baseline;
+	justify-content: space-around;
 	width: 20%;
 	font-weight: bold;
-	margin-left: 10px;
+	margin-left: 90px;
+	margin-right: 0px;
 }
 .iconmap {
 	border: 1px #f2f2f2 solid;
 	background-color: #f2f2f2;
 	border-radius: 10px 0px 0px 10px;
-	width: 15%; 
+	width: 20%; 
 	padding: 10px;
 	margin-left: 12px;
 }
 .search input { 
-	border: none;
 	font-weight: bolder;
-	padding: 10px;
-	width: 150px;
-}
-
-input:focus{
-		background-color:rgb(255, 255, 0);		
+	padding: 12px;
+	width: fit-content;
+	border: 0px solid transparent
 }
 .iconsearch{
 	display: flex;
@@ -97,11 +90,9 @@ input:focus{
 	background-color: #0065FC;
 	border-radius: 10px;
 	border-radius: 10px;
-	padding: 15px;
-	
+	padding: 15px;	
 }
 	
-
 .Rechercher {
 	justify-content: center;
 	color:white;
@@ -109,9 +100,9 @@ input:focus{
 	background-color: #0065FC;
 	width: 30%;
 	padding: 10px;
+	margin-left: 0px;
 	cursor: pointer;
 	opacity: 0.9;
-	margin-left: 15px;
 }
 .Rechercher:hover {
 	opacity: 1;
@@ -171,7 +162,7 @@ h2 {
 	margin-left:30px;
 	margin-bottom:30px;
 }
-main { 
+.section_1 { 
 	display: flex;
 	justify-content: space-around;	
 }
@@ -299,10 +290,10 @@ img.b {
 	border-radius: 10px 0px 0px 10px;
 	object-fit: cover;
 }
-
-#Activités{
-	display: grid;
-	margin-bottom: 30px;
+#Activités {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;		
 }
 #Activités h2 {
 	display: flex;
@@ -318,11 +309,8 @@ img.b {
 	row-gap: 50px;
 	height: 390px;
 }
-.Activités {
-	display: flex;		
-}
 
-#Activités figure {
+.Acts figure {
 	border: none;
 	border-radius: 15px;
 	width: 330px;
@@ -387,12 +375,11 @@ img.b {
 	display: grid;
 	grid-column: 4/5;
 	grid-row: 2/3;
-
 }
 
 footer	{
 	display: flex;
-	margin-top: 90px;
+	margin-top: 100px;
 	justify-content: space-between;
 	background-color: #f2f2f2;
 }
@@ -407,8 +394,135 @@ footer ul {
 	}
 
 
+@media  screen and (max-width:768px) {
 
-@media screen and (max-width:575.98px) { 
+#recherches {
+	width: 100%;
+	margin-left: 0px;
+}
+.iconmap {
+	width: 15%;
+	padding-left: 80px;
+}
+.Rechercher{
+	padding-left: 80px;
+}
+#filtres {
+	display:flex;
+	flex-direction:column;
+	width: 100%;	
+}
+#filtres h2 {
+	margin-left: 15px;
+}
+.filtresContainer{
+	width: auto;
+}
+.button{
+	margin-left: 15px;
+}
+.info {
+	margin-left: 20px;
+}
+.section_1 {
+	display: flex;
+	flex-direction: column;
+}
+.HBGTS h2 {
+
+	margin-left: 45px;
+}
+.arrow{
+	justify-content:space-between;
+	margin-left: 40px;
+	margin-right: 100px;
+}
+.HBGTS {
+	order: 0;
+	width:100%;
+	height: fit-content;
+	margin-top: 90px;
+}
+.Hébergements {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	gap: 0px;
+	padding-left: 0px;
+	}
+.Hébergements figure {
+	width: 38%;
+}
+.Hébergements img{
+	width: 100%;
+}
+.afficher {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+aside {
+	display: flex;
+	order:-1;
+	width: 100%;
+}
+.les_plus_populaires {
+	flex-direction: column;
+	width: 100%;
+}
+.les_plus_populaires figure {
+	width: 80%;
+}
+img.b {
+	width: 230px;	
+}
+#Activités{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.Acts {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: max-content;
+	justify-content: space-between;
+	margin-right: 0px;
+	margin-left: 0px;
+	gap: 0px;
+}
+.Acts figure {
+	width: auto;
+	height: auto;
+}
+
+.Acts img{
+	width: 100%;
+	height: 200px;
+}
+.item_1{
+	width: 50%;
+	height: auto;
+}
+.item_2 {
+	width: 50%;}
+.item_3{
+	width: 50%;
+	margin-top: 0px;
+}
+.item_4{
+	width: 50%;}
+.item_5{
+	width: 50%;}
+.item_6{
+	width: 50%;}
+}
+footer{
+	margin-top: 40px;
+}
+
+@media screen and (max-width:376px) { 
 
 nav {
 	display:flex;
@@ -423,7 +537,6 @@ nav {
 }
 .sub_nav {
 	display: flex;
-
 	width:100%;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -449,9 +562,7 @@ nav {
 	top: 0px;
 	padding-top:9px;
 	}
-.sinscrire :first-child{
-	padding-right: 13px;
-}
+
 .sinscrire :hover {
 	border-top: transparent;
 	}
@@ -480,12 +591,16 @@ h1 {
 	display: none;
 	visibility: hidden;
 }
-
 .iconmap {
 	margin-left: 13px;
 }
 .iconsearch {
 	visibility: visible;
+	opacity: 1;
+}
+.iconsearch :hover {
+	opacity: 0.9;
+	cursor: pointer;
 }
 #filtres {
 	display: flex;
@@ -519,7 +634,7 @@ h1 {
 .info { 
 	margin-left: 10px;
 } 
-main {
+.section_1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -531,7 +646,7 @@ aside {
 	border-radius: 0px;
 	background-color:#f2f2f2;
 	width:auto;
-	height: auto;
+	height: fit-content;
 	margin-bottom: 20px;
 	justify-content: center;	
 	}
@@ -549,10 +664,10 @@ aside {
 	margin-right: 20px;
 	justify-content: space-between;
 }
-aside figure{
-	width: 90%;
-	height: 130px;
-	font-size: 20px;
+.les_plus_populaires figure{
+	width: 92%;
+	height: 135px;
+	font-size: 14px;
 	justify-items: center;
 	}
 .b {
@@ -565,12 +680,13 @@ aside figure{
 	line-height: 1rem;
 }
 img.b {
-	height: 128px;
+	height: 133px;
 	}
 .HBGTS {
 	display: flex;
 	order: 0;
 	background-color: white;
+	margin-top: 15px;
 	flex-direction: column;
 	width: auto;
 	height: auto;
@@ -579,6 +695,7 @@ img.b {
 	
 .HBGTS h2 {
 	margin-left: 5px;
+	margin-top: 0px;
 	}
 .Hébergements {
 	display: flex;
@@ -620,6 +737,7 @@ h3 {
 	width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
+	margin-bottom: 30px;
 	}
 #Activités h2{
 	margin-top: 50px;
@@ -649,16 +767,31 @@ h3 {
 	width: 100%;
 	height:120px;
 }
-
+.item_1{
+	width: auto;
+}
+.item_2{
+	width: auto;
+}
 .item_3 {
 	margin-top: 0px;
+	width: auto;
+}
+.item_4{
+	width: auto;
+}
+.item_5{
+	width:auto;
+}
+.item_6{
+	width:auto;
 }
 
 footer {
 	display: flex;
 	flex-direction: column;
 	width: auto;
-	margin-top: 30px;
+	margin-top: 0px;
 	}
 footer ul{
 	display: flex;
