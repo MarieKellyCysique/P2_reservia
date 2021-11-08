@@ -46,7 +46,6 @@ nav a {
 .sub_nav :first-child{
 	color: #0065FC;
 }
-
 .sinscrire {
 	font-weight: bolder;
 	color: #0065FC;
@@ -92,7 +91,6 @@ h1 {
 	border-radius: 10px;
 	padding: 15px;	
 }
-	
 .Rechercher {
 	justify-content: center;
 	color:white;
@@ -125,7 +123,6 @@ h2 {
 	display: flex;
 	flex-direction: row;
 }
-
 .button { 
 	display: flex;
 	align-items:center;
@@ -145,13 +142,11 @@ h2 {
 	color: #0065FC;
 	margin-right: 5px;	
 }
-
 .logements { 
 	display: flex;
 	justify-items: flex-start;
 	align-items: baseline;
 }
-
 .info {
 	color:#0065FC;
 	font-size: small;
@@ -166,7 +161,6 @@ h2 {
 	display: flex;
 	justify-content: space-around;	
 }
-
 .HBGTS {
 	display: flex;
 	flex-direction: column;
@@ -187,8 +181,7 @@ h2 {
 	grid-template-columns: 230px 230px 230px;
 	grid-template-rows: 200px 200px;
 	padding-left: 30px;
-}
-	
+}	
 .Hébergements figure{
 	display: grid;
 	border: 3px solid transparent;
@@ -198,7 +191,6 @@ h2 {
 	height:210px;
 	box-shadow: 1px 6px 5px rgb(173, 171, 171);
 }
-
 figcaption {
 	justify-content: left;
 	margin-left: 10px;
@@ -219,7 +211,6 @@ h3 {
 	font-weight:bold;
 	flex-direction: row;
 }
-
 .star {
 	 color: #0065FC;
 	font-size:x-small;
@@ -233,7 +224,6 @@ h3 {
 	font-weight: bold;
 	margin-left: 40px;
 }
-
 aside { 
 	display: flex;
 	background-color: #f2f2f2;
@@ -250,7 +240,6 @@ aside {
 	width: 100%;
 	padding-top: 0px;
 }
-
 aside figure {
 	display: flex;
 	position: absolute;
@@ -270,11 +259,9 @@ aside.figcaption {
 	align-items: baseline;
 	justify-content:space-around;	
 }
-
 .arrow h2{
 	margin-right: 30px;
 }
-
 .b {
 	display:flex;
 	width: 330px;
@@ -283,7 +270,6 @@ aside.figcaption {
 	justify-content: space-between;
 	margin-bottom: 70px;
 }
-
 img.b {
 	width: 112px;
 	height: 112px;
@@ -309,21 +295,18 @@ img.b {
 	row-gap: 50px;
 	height: 390px;
 }
-
 .Acts figure {
 	border: none;
 	border-radius: 15px;
 	width: 330px;
 	box-shadow: 2px 6px 5px rgb(173, 171, 171);
 }
-
 .Pics_L {
 	width: 330px;
 	height: 390px;
 	border-radius: 15px 15px 0px 0px;
 	object-fit: cover;	
 }
-
 .Pic_M {
     width: 330px;
 	height: 170px;
@@ -370,13 +353,11 @@ img.b {
 	grid-column: 4/5;
 	grid-row: 1/2;
 }
-
 .item_6 {
 	display: grid;
 	grid-column: 4/5;
 	grid-row: 2/3;
 }
-
 footer	{
 	display: flex;
 	margin-top: 100px;
@@ -391,7 +372,7 @@ footer ul {
 	list-style-type: none;
 	line-height: 2;
 	width: 75%;
-	}
+}
 
 
 @media  screen and (max-width:768px) {
@@ -410,15 +391,15 @@ footer ul {
 #filtres {
 	display:flex;
 	flex-direction:column;
-	width: 100%;	
+	width: auto;	
 }
 #filtres h2 {
 	margin-left: 15px;
 }
-.filtresContainer{
+.filtresContainer {
 	width: auto;
 }
-.button{
+.button {
 	margin-left: 15px;
 }
 .info {
@@ -427,12 +408,13 @@ footer ul {
 .section_1 {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 .HBGTS h2 {
 
 	margin-left: 45px;
 }
-.arrow{
+.arrow {
 	justify-content:space-between;
 	margin-left: 40px;
 	margin-right: 100px;
@@ -522,6 +504,8 @@ footer{
 	margin-top: 40px;
 }
 
+
+
 @media screen and (max-width:376px) { 
 
 nav {
@@ -542,12 +526,12 @@ nav {
 	margin-right: 0px;
 	padding: 5px;
 	}
-.sub_nav :first-child{
+.sub_nav :first-child {
 	padding-left: 10px;
 	margin-left: 0px;
 }
 .sub_nav :last-child{
-	padding-left: 110px;
+	padding-left: 50px;
 }
 .sub_nav a{
 	border-bottom: 3px solid #f2f2f2;
@@ -584,7 +568,7 @@ h1 {
 	text-align: center;
 	font-size: 13px;
 	}
-.search{
+.search {
 	width: 90px;
 	}
 .Rechercher {
@@ -615,7 +599,7 @@ h1 {
 	flex-wrap: wrap;
 	width: 100%;
 }
-.filtresContainer i{
+.filtresContainer i {
 	margin: 0px;
 	margin-right: 12px;
 	padding: 17px;	
@@ -629,8 +613,7 @@ h1 {
 	margin-right: 1px;
 	margin-bottom: 10px;
 	border-left: transparent;
-}
-	
+}	
 .info { 
 	margin-left: 10px;
 } 
@@ -704,7 +687,7 @@ img.b {
 	padding-left: 0px;
 	}
 
-.Hébergements figure{
+.Hébergements figure {
 	width: 98%;
 	height: 167px;
 	margin-left:0px;
@@ -739,7 +722,7 @@ h3 {
 	margin-right: 0px;
 	margin-bottom: 30px;
 	}
-#Activités h2{
+#Activités h2 {
 	margin-top: 50px;
 	margin-left: 5px;
 	}
@@ -749,7 +732,7 @@ h3 {
 	height:auto;
 	row-gap: 5px;
 	}
-#Activités figure{
+#Activités figure {
 	display: flex;
 	flex-direction: column;	
 	width: 99%;
@@ -786,22 +769,21 @@ h3 {
 .item_6{
 	width:auto;
 }
-
 footer {
 	display: flex;
 	flex-direction: column;
 	width: auto;
 	margin-top: 0px;
-	}
-footer ul{
+}
+footer ul {
 	display: flex;
 	flex-direction: column;
 	justify-items: start;
 	margin-bottom: 5px;
 	padding-left: 15px;	
-	}
+}
 footer h3 {
 	font-weight: bolder;
 	font-size: 16px;
-	}
+}
 }
